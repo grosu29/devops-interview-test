@@ -29,9 +29,9 @@ repository:
       -Dmetadata-keystore.metadata.algorithm=DESede"
   resources:
     requests:
-      memory: "3000Mi"
+      memory: "1000Mi"
     limits:
-      memory: "3000Mi"
+      memory: "1000Mi"
   # The repository readiness probe is used to check startup only as a failure
   # of the liveness probe later will result in the pod being restarted.
   readinessProbe:
@@ -69,9 +69,9 @@ postgresql:
     enabled: false
   resources:
     requests:
-      memory: "1500Mi"
+      memory: "1000Mi"
     limits:
-      memory: "1500Mi"
+      memory: "1000Mi"
 
 metadataKeystore:
   defaultKeystorePassword: "mp6yc0UD9e"
